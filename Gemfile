@@ -25,6 +25,7 @@ gem 'react-rails', '~> 1.0'
 
 gem 'taric', '~> 0.2'
 
+gem 'puma'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

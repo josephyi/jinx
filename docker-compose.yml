@@ -1,0 +1,14 @@
+memcached:
+  image: memcached
+  ports:
+    - "11211"
+app:
+  build: .
+  command: bundle exec rails s -p 2999 -b '0.0.0.0'
+  volumes:
+    - .:/app
+  env_file: .env
+  ports:
+    - "2999:2999"
+  links:
+    - memcached
