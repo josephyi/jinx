@@ -1,0 +1,40 @@
+{
+  "name": "jinx",
+  "version": "0.0.0",
+  "description": "league of legends api frontend",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josephyi/jinx.git"
+  },
+  "keywords": [
+    "riot",
+    "games",
+    "league",
+    "of",
+    "legends",
+    "api",
+    "ruby",
+    "rails"
+  ],
+  "author": "Joseph Yi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josephyi/jinx/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^5.1.11",
+    "babel-loader": "^5.0.0",
+    "react": "^0.13.2",
+    "react-bootstrap": "^0.20.3",
+    "react-hot-loader": "^1.2.5",
+    "webpack": "^1.8.5",
+    "webpack-dev-server": "^1.8.0"
+  }
+}

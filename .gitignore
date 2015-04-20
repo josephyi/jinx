@@ -1,0 +1,11 @@
+.idea/
+/.bundle/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/log/
+.env
+/public/assets/
+/node_modules/
