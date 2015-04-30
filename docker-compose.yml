@@ -2,13 +2,18 @@ memcached:
   image: memcached
   ports:
     - "11211"
-webpackdevserver:
+#webpackdevserver:
+#  build: .
+#  command: webpack-dev-server --config webpack.config.hot.js --port 8080
+#  volumes:
+#      - .:/app
+#  ports:
+#    - "8080:8080"
+webpack:
   build: .
-  command: webpack-dev-server --config webpack/webpack.hot.config.js --hot --progress --inline --port 2998
+  command: webpack --watch
   volumes:
       - .:/app
-  ports:
-    - "2998:2998"
 app:
   build: .
   command: bundle exec rails s -p 2999 -b '0.0.0.0'
@@ -19,4 +24,3 @@ app:
     - "2999:2999"
   links:
     - memcached
-    - webpackdevserver

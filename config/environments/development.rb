@@ -33,6 +33,11 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+  config.action_controller.asset_host = Proc.new { |source|
+    if source =~ /wp_bundle\.js$/i
+      "http://localhost:8080"
+    end
+  }
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
