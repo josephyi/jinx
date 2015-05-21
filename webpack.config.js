@@ -7,7 +7,7 @@ module.exports = {
 
     entry: {
         App: [
-            'webpack-dev-server/client?http://localhost:8080/javascripts/',
+            'webpack-dev-server/client?http://0.0.0.0:8080/javascripts/',
             'webpack/hot/only-dev-server',
             './index.jsx'
         ]
@@ -16,7 +16,7 @@ module.exports = {
     output: {
         filename: '[name]_wp_bundle.js', // Will output App_wp_bundle.js
         path: __dirname + '/app/assets/javascripts/generated', // Save to Rails Asset Pipeline
-        publicPath: 'http://localhost:8080/javascripts' // Required for webpack-dev-server
+        publicPath: 'http://0.0.0.0:8080/javascripts' // Required for webpack-dev-server
     },
 
     // Require the webpack and react-hot-loader plugins
