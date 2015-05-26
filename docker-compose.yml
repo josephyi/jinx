@@ -4,16 +4,16 @@ memcached:
     - "11211"
 webpackdevserver:
   build: .
-  command: webpack-dev-server --config webpack.config.hot.js --port 8080
+  command: webpack-dev-server --config webpack.config.hot.js --port 8080 --host 0.0.0.0 --hot --inline
   volumes:
       - .:/app
   ports:
     - "8080:8080"
-webpack:
-  build: .
-  command: webpack --watch
-  volumes:
-      - .:/app
+#webpack:
+#  build: .
+#  command: webpack --watch
+#  volumes:
+#      - .:/app
 app:
   build: .
   command: bundle exec rails s -b '0.0.0.0'

@@ -35,7 +35,7 @@ Rails.application.configure do
 
   config.action_controller.asset_host = Proc.new { |source|
     if source =~ /wp_bundle\.js$/i
-      "http://localhost:8080"
+      "http://0.0.0.0:8080"
     end
   }
   # Raises error for missing translations
