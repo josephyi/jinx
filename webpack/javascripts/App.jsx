@@ -1,15 +1,14 @@
 var React = require('react');
 var Button = require('react-bootstrap/lib/Button');
-import Nav from 'react-bootstrap/lib/Nav';
-import Navbar from 'react-bootstrap/lib/Navbar';
-import NavItem from 'react-bootstrap/lib/NavItem';
-import DropdownButton from 'react-bootstrap/lib/DropdownButton';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
-
+var Nav = require('react-bootstrap/lib/Nav');
+var Navbar = require('react-bootstrap/lib/Navbar');
+var NavItem = require('react-bootstrap/lib/NavItem');
+var DropdownButton = require('react-bootstrap/lib/DropdownButton');
+var MenuItem = require('react-bootstrap/lib/MenuItem');
 
 class Navigation extends React.Component {
     render() {
-        return (<Navbar brand='React-Bootstrap' inverse toggleNavKey={0}>
+        return (<Navbar brand='Jinx' inverse toggleNavKey={0}>
             <Nav right eventKey={0}> {/* This is the eventKey referenced */}
                 <NavItem eventKey={1} href='#'>Link!</NavItem>
                 <NavItem eventKey={2} href='#'>Link</NavItem>
